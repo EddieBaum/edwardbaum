@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Rock+Salt&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+        <title>
+            Edward Baum
+        </title>
+
+        <style>
+             /* Acua monochromatic colors:  #000000  #007f7f  #00ffff  #7fffff  #ffffff */
+
+            @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+             .tracking-in-expand{
+                -webkit-animation:tracking-in-expand 2.2s cubic-bezier(.215,.61,.355,1.000) both;
+                animation:tracking-in-expand 2.2s cubic-bezier(.215,.61,.355,1.000) both;
+                animation-iteration-count: 1;
+                animation-delay: .2s;
+            }
+
+            body {
+                background-color: #007f7f;
+            } 
+
+            .mainDiv {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .box {
+                display: flex; 
+                flex: 1; 
+                height: 100vh; 
+            }
+
+            #boxA {
+                background-color: #007f7f; /* #007f7f */
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #edwardbaum {
+                color: black;
+                padding: 0px 0px;
+                font-size: 3.5em;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+                overflow: hidden;
+                font-family: raleway;
+                font-weight: 600;
+            }
+
+            #dotcom {
+                font-size: 1.5em;
+                letter-spacing: .3em;
+            }
+
+            .ml16dotcom .letter {
+                display: inline-block;
+                line-height: 1.5em;
+            }
+
+            /********** SPINNER FEATURE ************/
+            /*.spinner {
+                width: 200px;
+                height: 200px;
+
+                position: relative;
+                margin: 20px auto;
+             }
+
+             .double-bounce1, .double-bounce2 {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: #007f7f;
+                opacity: 0.8;
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+                -webkit-animation: sk-bounce 4.5s infinite ease-in-out;
+                animation: sk-bounce 4.5s infinite ease-in-out;
+            }
+
+             .double-bounce2 {
+                -webkit-animation-delay: -1.0s;
+                animation-delay: -1.0s;
+             }
+
+             @-webkit-keyframes sk-bounce {
+                0%, 100% { -webkit-transform: scale(0.0) }
+                50% { -webkit-transform: scale(1.0) }
+             }
+
+            @keyframes sk-bounce {
+                0%, 100% { 
+                    transform: scale(0.0);
+                    -webkit-transform: scale(0.0);
+                } 50% { 
+                    transform: scale(1.0);
+                    -webkit-transform: scale(1.0);
+                }
+            }*/
+
+
+            /* MEDIA SCREEN SIZE ADJUSTMENT */
+            @media only screen and (max-width: 1000px) {
+                .mainDiv {
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100vh; 
+                }
+
+                .box {
+                    width: 100%;
+                }
+
+                #dotcom {
+                    font-size: 2.7em;
+                }
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="mainDiv">
+
+            <div class='box' id='boxA'> 
+                <h1 class='tracking-in-expand' id='edwardbaum'>Edward Baum</h1> 
+                <h3 class='ml16dotcom' id="dotcom">.com</h3> 
+            </div>                
+            
+                <!-- <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div> -->
+            
+            </div>
+
+
+
+        </div>
+        <script src='https://github.com/EddieBaum/edwardbaum/main.js'></script>
+        <!-- <script src='file:///Users/edwardbaum/Web%20Development/anime.js'></script> -->
+
+    </body>
+
+</html>
