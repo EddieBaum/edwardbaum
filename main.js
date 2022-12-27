@@ -12,7 +12,8 @@
       translateY: [-100,0],
       easing: "easeOutExpo",
       duration: 10000,
-      delay: (el, i) => 50 * i
+      delay: (el, i) => 50 * i, 
+      opacity: [0,1]
     }).add({
       targets: '.ml16dotcom',
       opacity: 0,
